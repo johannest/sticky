@@ -8,4 +8,6 @@ public class StickyState extends JavaScriptExtensionState {
 	
 	public String stickyId;
 
+	public int topSpacingInPx = 0;
+	
 }

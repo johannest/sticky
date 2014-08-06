@@ -21,6 +21,16 @@ public class Sticky extends AbstractJavaScriptExtension {
 		return (StickyState) super.getState();
 	}
 
+	public void setTopSpacingInPx(int pxs) {
+		if (isSticky) {
+			makeUnSticky();
+			getState().topSpacingInPx = pxs;
+			makeSticky();
+		} else {
+			getState().topSpacingInPx = pxs;
+		}
+	}
+	
 	public void makeSticky() {
 		callFunction("makeSticky");
 		isSticky = true;
