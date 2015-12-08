@@ -24,7 +24,7 @@ import com.vaadin.ui.VerticalLayout;
 import de.svenjacobs.loremipsum.LoremIpsum;
 
 @SuppressWarnings("serial")
-@Theme("stickyvaadin")
+@Theme("valo")
 public class StickyDemoUI extends UI {
 
 	@WebServlet(value = "/*", asyncSupported = true)
